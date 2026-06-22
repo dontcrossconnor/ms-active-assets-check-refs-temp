@@ -1,0 +1,121 @@
+<svg xmlns="http://w3.org" viewBox="0 0 3600 1650" width="3600" height="1650">
+  <defs>
+    <!-- 1. Photo Safe / Void Pantograph Background Pattern -->
+    <pattern id="photo-safe-pantograph" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="#f0f6ff" />
+      <path d="M 0,0 L 120,120 M 120,0 L 0,120" fill="none" stroke="#bcd4f5" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="30" cy="30" r="1.5" fill="#a5c4f0"/>
+      <circle cx="90" cy="30" r="1.5" fill="#a5c4f0"/>
+      <circle cx="30" cy="90" r="1.5" fill="#a5c4f0"/>
+      <circle cx="90" cy="90" r="1.5" fill="#a5c4f0"/>
+    </pattern>
+
+    <!-- 2. High-Density Guilloché Frame Pattern -->
+    <pattern id="guilloche-wave-600" width="150" height="75" patternUnits="userSpaceOnUse">
+      <path d="M 0,37.5 Q 37.5,0 75,37.5 T 150,37.5" fill="none" stroke="#002060" stroke-width="3" opacity="0.85"/>
+      <path d="M 0,37.5 Q 37.5,75 75,37.5 T 150,37.5" fill="none" stroke="#002060" stroke-width="3" opacity="0.85"/>
+      <path d="M 0,18.75 Q 75,56.25 150,18.75" fill="none" stroke="#003399" stroke-width="1.5" opacity="0.6"/>
+    </pattern>
+
+    <!-- 3. Corner Rosette Anchor -->
+    <g id="rosette-600">
+      <rect x="-75" y="-75" width="150" height="150" fill="#001a4d" />
+      <circle cx="0" cy="0" r="65" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="12,6"/>
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+
+    <!-- Microprint Text Path Definitions -->
+    <path id="top-mp-600" d="M 100,90 L 3500,90" />
+    <path id="bottom-mp-600" d="M 3500,1560 L 100,1560" />
+    <path id="sig-mp-path" d="M 0,50 L 1150,50" fill="none" stroke="none" />
+  </defs>
+
+  <!-- BACKGROUND & MAIN FRAME CONTAINER -->
+  <rect x="0" y="0" width="3600" height="1650" fill="url(#photo-safe-pantograph)" />
+  <rect x="25" y="25" width="3550" height="1600" fill="none" stroke="#001a4d" stroke-width="10" />
+  <rect x="75" y="75" width="3450" height="1500" fill="none" stroke="url(#guilloche-wave-600)" stroke-width="75" />
+
+  <!-- Outer Frame Boundary Microprint Text -->
+  <text font-family="monospace" font-size="18px" font-weight="900" fill="#001a4d" letter-spacing="3px">
+    <textPath href="#top-mp-600" startOffset="0">
+      SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK
+    </textPath>
+  </text>
+  <text font-family="monospace" font-size="18px" font-weight="900" fill="#001a4d" letter-spacing="3px">
+    <textPath href="#bottom-mp-600" startOffset="0">
+      SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK SECURITY CHECK
+    </textPath>
+  </text>
+
+  <!-- Hard Anchor Corner Rosettes -->
+  <use href="#rosette-600" x="75" y="75" />
+  <use href="#rosette-600" x="3525" y="75" />
+  <use href="#rosette-600" x="75" y="1575" />
+  <use href="#rosette-600" x="3525" y="1575" />
+
+  <!-- COMPONENT: 5-LINE HOLDER INFO SECTION -->
+  <g id="holder-info-section" transform="translate(250, 220)">
+    <text x="0" y="40" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42px" font-weight="bold" fill="#001a4d" letter-spacing="1px">JOHN W. AUDITOR</text>
+    <text x="0" y="95" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34px" font-weight="500" fill="#001a4d" letter-spacing="0.5px">MARY C. AUDITOR</text>
+    <text x="0" y="150" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34px" font-weight="500" fill="#001a4d" letter-spacing="0.5px">1234 SECURITY BLUE WAY</text>
+    <text x="0" y="205" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34px" font-weight="500" fill="#001a4d" letter-spacing="0.5px">PANTOGRAPH CITY, IN 46201</text>
+    <text x="0" y="260" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-style="italic" font-weight="normal" fill="#002673" opacity="0.8">PH: (555) 019-9432</text>
+  </g>
+
+  <!-- COMPONENT: CHECK DATE AREA -->
+  <g id="check-date-section" transform="translate(2550, 260)">
+    <text x="0" y="40" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32px" font-weight="bold" fill="#001a4d" letter-spacing="2px">DATE</text>
+    <line x1="110" y1="42" x2="800" y2="42" stroke="#001a4d" stroke-width="3" />
+  </g>
+
+  <!-- COMPONENT: PAY TO THE ORDER OF SECTION -->
+  <g id="pay-to-order-section" transform="translate(180, 560)">
+    <text x="0" y="50" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30px" font-weight="bold" fill="#001a4d" letter-spacing="0.5px">PAY TO THE</text>
+    <text x="0" y="90" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30px" font-weight="bold" fill="#001a4d" letter-spacing="0.5px">ORDER OF</text>
+    <line x1="210" y1="85" x2="2630" y2="85" stroke="#001a4d" stroke-width="4" />
+  </g>
+
+  <!-- COMPONENT: CHECK AMOUNT BOX (URC) -->
+  <g id="amount-box-section" transform="translate(2850, 520)">
+    <text x="-70" y="85" font-family="Georgia, serif" font-size="80px" font-weight="bold" fill="#001a4d">$</text>
+    <rect x="0" y="0" width="500" height="130" fill="#ffffff" stroke="#001a4d" stroke-width="4" rx="8" />
+    <line x1="0" y1="65" x2="500" y2="65" stroke="#bcd4f5" stroke-width="1" stroke-dasharray="10,10" />
+  </g>
+
+  <!-- COMPONENT: AMOUNT TEXT LINE (LEGAL AMOUNT SCREEN) -->
+  <g id="amount-text-section" transform="translate(180, 760)">
+    <line x1="0" y1="50" x2="3000" y2="50" stroke="#001a4d" stroke-width="4" />
+    <text x="3030" y="48" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34px" font-weight="bold" fill="#001a4d" letter-spacing="1px">DOLLARS</text>
+  </g>
+
+  <!-- COMPONENT: AUTHORIZED SIGNATURE MICROPRINT LINE & SYMBOL -->
+  <g id="signature-line-section" transform="translate(2100, 1220)">
+    <text font-family="monospace" font-size="18px" font-weight="900" fill="#001a4d" letter-spacing="2.5px">
+      <textPath href="#sig-mp-path" startOffset="0">
+        AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE AUTHORIZED SIGNATURE 
+      </textPath>
+    </text>
+    <text x="450" y="95" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="bold" fill="#001a4d" letter-spacing="1px" text-anchor="middle">
+      AUTHORIZED SIGNATURE
+    </text>
+    <g id="security-warning-symbol" transform="translate(1180, 10)">
+      <rect x="0" y="0" width="120" height="100" fill="#ffffff" stroke="#001a4d" stroke-width="4" rx="4" />
+      <rect x="40" y="45" width="40" height="35" fill="#001a4d" rx="2" />
+      <path d="M 48,45 L 48,32 A 12,12 0 0,1 72,32 L 72,45" fill="none" stroke="#001a4d" stroke-width="6" stroke-linecap="round" />
+      <circle cx="60" cy="58" r="4" fill="#ffffff" />
+      <line x1="60" y1="62" x2="60" y2="72" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+      <text x="12" y="92" font-family="monospace" font-size="12px" font-weight="900" fill="#001a4d">M</text>
+      <text x="100" y="92" font-family="monospace" font-size="12px" font-weight="900" fill="#001a4d">P</text>
+    </g>
+  </g>
+
+  <!-- COMPONENT: MICR BOTTOM CLEAR-ZONE LAYOUT LINES -->
+  <!-- Set to use your system's installed MICR font natively -->
+  <g id="micr-clearzone-alignment" transform="translate(0, 1350)">
+    <!-- Baseline tracking element using standard raw E-13B ASCII characters -->
+    <!-- o = Transit, d = Amount/On-Us, a/b/c = Dash/Clearance glyph maps -->
+    <text x="280" y="145" font-family="'MICR', 'MICR Encoding', 'GnuMICR', 'MICR E13B', monospace" font-size="105px" fill="#000000" letter-spacing="0px">o021200025o 12345678d 0101</text>
+  </g>
+
+</svg>
