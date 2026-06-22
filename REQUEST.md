@@ -31,4 +31,3 @@
 | `crop_inter_pill_cell.png` | Layer 2 + 3 (one inter-pill cell) |
 | `crop_corner_tl.png` | Layer 4 (top-left corner module) |
 | `Google-harlands-fullsvg.svg` | Layer 1 syntax reference only |
-| `Vision.md` | Success criteria (§1 end goal) |
