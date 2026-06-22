@@ -1,14 +1,14 @@
 # Pasteable request — 4-layer check security border @ 600 DPI
 
 **Inner frame:** 3480×1530 px (inset 60 px on 3600×1650 canvas)  
-**Reference:** Morgan Stanley Active Assets plate (1200 DPI border-only scan in this repo)
+**Reference:** target personal-check plate (1200 DPI border-only scan in this repo)
 
 ---
 
 ## Request
 
 > **Request: Full parametric specification for a 4-layer check security border @ 600 DPI**  
-> Inner frame 3480×1530 px. Reference: Morgan Stanley Active Assets plate (1200 DPI border-only scan attached).  
+> Inner frame 3480×1530 px. Reference: target personal-check plate (1200 DPI border-only scan attached).  
 >  
 > Deliver separate equation sets for:  
 > **(0)** outer/inner hairlines + MICR clear zone  
@@ -30,4 +30,4 @@
 | `HIGHRES-border_only-1200dpi.png` | Global scale (7200×3384 @ 1200 DPI) |
 | `crop_inter_pill_cell.png` | Layer 2 + 3 (one inter-pill cell) |
 | `crop_corner_tl.png` | Layer 4 (top-left corner module) |
-| `Google-harlands-fullsvg.svg` | Layer 1 syntax reference only |
+| `border_syntax_reference.svg` | Layer 1 syntax reference only |
