@@ -1,4 +1,4 @@
-# MS Active Assets check — brief attachments (temporary)
+#brief attachments (temporary)
 
 Minimal public mirror of the **four reference files** for the pasteable 4-layer border specification request.
 
